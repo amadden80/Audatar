@@ -9,7 +9,6 @@ function Audatar_audio(username){
     $('body').append('<script type="application/javascript" src="http://www.Sonifizer.com/api/username/'+username +'/json"></script>');
 }
 
-
 function load_username(e){
     e.preventDefault();
     var username = $('#username-input').val()
@@ -31,5 +30,4 @@ $(function(){
     $("#username-play-button").hide()
 
 });
-
 
