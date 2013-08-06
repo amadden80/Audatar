@@ -1,6 +1,8 @@
 // Sonifizer
 //  by Andrew Madden
  
+var Sonifizer_Base_URL = "http://www.Sonifizer.com";
+// var Sonifizer_Base_URL = "http:localhost:3000";
 
 
 // ******* URL API *******
@@ -35,7 +37,7 @@ function Sonifizer_string(string, Sonifizer_Play, delay){
     var _body = document.getElementsByTagName('body') [0];
     var Sonifizer_Script = document.createElement('script');
     Sonifizer_Script.type = "application/javascript";
-    Sonifizer_Script.src = "http://www.Sonifizer.com/api/string/"+ string +"/json";
+    Sonifizer_Script.src = Sonifizer_Base_URL+"/api/string/"+ string +"/json";
     _body.appendChild(Sonifizer_Script);
 
     var callback_function = callback || function(response){};
@@ -74,7 +76,7 @@ var Sonifizer_Response_array = "";
 
 function Sonifizer_array(data_array, callback){
     var callback_function = callback || function(response){};
-    var url = "http://www.Sonifizer.com/api/array";
+    var url = Sonifizer_Base_URL+"/api/array";
     $.post(url, {data: data_array},
     function(data){
                 callback_function(Sonifizer_Response_array);
