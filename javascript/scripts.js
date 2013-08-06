@@ -1,11 +1,5 @@
 
-// function Audatar_audio(username){
-//     $('body').append('<script type="application/javascript" src="http://www.Sonifizer.com/api/username/'+username +'/json"></script>');
-// }
-
-
-function Audatar_audio(username){
-    // Use this if using jQuery
+function Audatar_audio(username){ 
     $('body').append('<script type="application/javascript" src="http://www.Sonifizer.com/api/username/'+username +'/json"></script>');
 }
 
