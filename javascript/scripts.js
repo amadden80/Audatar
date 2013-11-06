@@ -3,7 +3,7 @@
 function Audatar_audio(username){
     // Use this if using jQuery
     $('body').append('<script type="application/javascript" src="https://sonifizer.herokuapp.com/Sonifizer.js/api/username/'+username +'/json"></script>');
-
+}
 
 function load_username(e){
     e.preventDefault();
