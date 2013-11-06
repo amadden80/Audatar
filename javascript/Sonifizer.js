@@ -1,7 +1,7 @@
 // Sonifizer
 //  by Andrew Madden
  
-var Sonifizer_Base_URL = "http://www.Sonifizer.com";
+var Sonifizer_Base_URL = "https://sonifizer.herokuapp.com/Sonifizer.js";
 // var Sonifizer_Base_URL = "http:localhost:3000";
 
 

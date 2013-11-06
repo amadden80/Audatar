@@ -1,12 +1,8 @@
 
-// function Audatar_audio(username){
-//     $('body').append('<script type="application/javascript" src="http://www.Sonifizer.com/api/username/'+username +'/json"></script>');
-// }
-
 
 function Audatar_audio(username){
     // Use this if using jQuery
-    $('body').append('<script type="application/javascript" src="http://www.Sonifizer.com/api/username/'+username +'/json"></script>');
+    $('body').append('<script type="application/javascript" src="https://sonifizer.herokuapp.com/Sonifizer.js/api/username/'+username +'/json"></script>');
 }
 
 function load_username(e){
